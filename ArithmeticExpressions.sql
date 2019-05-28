@@ -66,3 +66,9 @@ select concat(first_name, ' ', last_name) AS FullName,
 		length(concat(first_name, ' ', last_name)) - 1 AS Length,
         concat(left(first_name, 1), ' ', left(last_name, 1)) AS FirstInitial
 from sakila.actor;
+
+-- Various func
+select concat(first_name, ' ', last_name) AS FullName,
+		reverse(concat(first_name, ' ', last_name)) AS ReversedFullName,
+        replace(concat(first_name, ' ', last_name), 'S', '$') AS ReplaceExample
+from sakila.actor
