@@ -7,7 +7,7 @@ select concat(first_name, ' ', last_name) as FullName,
 from sakila.actor;
 
 -- DATETIME funcs
--- sql contains numeous in-built datetime funcs
+-- sql contains numerous in-built datetime funcs
 select rental_date,
 		dayofweek(rental_date) as DayOfWeek,
         quarter(rental_date) as Quarter,
