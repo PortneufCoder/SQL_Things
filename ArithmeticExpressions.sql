@@ -1,5 +1,4 @@
--- Retrieve column names using aliases
--- switch colum names
+-- Retrieve and edit column names using aliases
 
 SELECT rental_date, inventory_id, return_date
 FROM sakila.rental;
